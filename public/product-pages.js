@@ -290,10 +290,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.title = `${page.eyebrow} | Assurance Total Protection`;
     document.body.dataset.active = page.active;
 
-    const quickCards = page.quick.map(([icon, title, text]) => `
-        <div class="col-md-4"><div class="product-quick-card"><i class="fa-solid ${icon}"></i><div><strong>${title}</strong><span>${text}</span></div></div></div>
-    `).join('');
-
     const cards = page.cards.map(([icon, title, text]) => `
         <div class="product-info-card"><i class="fa-solid ${icon}"></i><h3>${title}</h3><p class="text-secondary mb-0">${text}</p></div>
     `).join('');
@@ -314,12 +310,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="row align-items-center g-5">
                     <div class="col-lg-8">
                         <div class="product-hero-copy">
-                            <span class="badge bg-white text-dark px-3 py-2 rounded-pill mb-4 tracking-wide text-uppercase fw-bold shadow-sm">${page.eyebrow}</span>
                             <h1>${page.title}</h1>
                             <p class="mt-4">${page.intro}</p>
                             <div class="commercial-hero-actions">
-                                <a class="btn btn-primary px-5 py-3 rounded-pill" href="contact-us.html#quote-form">Start a Quote →</a>
-                                <a class="btn btn-outline-light px-5 py-3 rounded-pill fw-bold" href="#coverage">View Coverage →</a>
+                                <a class="btn btn-primary px-5 py-3 rounded-pill" href="contact-us.html#quote-form">Get a Quote</a>
                             </div>
                         </div>
                     </div>
@@ -327,18 +321,12 @@ ${heroMark}
                 </div>
             </div>
         </section>
-        <section class="product-quick-row">
-            <div class="container"><div class="row g-3">${quickCards}</div></div>
-        </section>
         <section class="product-section" id="coverage">
             <div class="container">
                 <div class="row align-items-end mb-5 g-4">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8">
                         <span class="section-kicker">Coverage Overview</span>
                         <h2 class="display-6 fw-bold text-primary mb-3">${page.eyebrow} that fits your needs.</h2>
-                    </div>
-                    <div class="col-lg-5">
-                        <p class="text-secondary mb-0">A calmer page layout with the same Assurance design language: clear options, fewer distractions, and direct next steps.</p>
                     </div>
                 </div>
                 <div class="product-card-grid">${cards}</div>
@@ -357,7 +345,7 @@ ${heroMark}
                             <span class="section-kicker">Start Here</span>
                             <h2 class="fw-bold mb-3">Ready to compare options?</h2>
                             <p class="mb-4">Send the basics and an Assurance adviser will help match coverage to your needs.</p>
-                            <a href="contact-us.html#quote-form" class="btn btn-primary px-5 py-3 rounded-pill">Request a Quote</a>
+                            <a href="contact-us.html#quote-form" class="btn btn-primary px-5 py-3 rounded-pill">Get a Quote</a>
                         </div>
                     </div>
                 </div>

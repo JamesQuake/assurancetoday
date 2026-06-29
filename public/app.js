@@ -51,23 +51,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuItems.forEach((item) => {
         const toggle = item.querySelector('.nav-menu-toggle');
+        const panel = item.querySelector('.mega-menu-panel, .standard-submenu');
+        let closeTimer = null;
         if (!toggle) return;
 
-        item.addEventListener('mouseenter', () => {
-            if (window.innerWidth >= 992) openMenu(item);
-        });
+        const clearCloseTimer = () => {
+            if (!closeTimer) return;
+            window.clearTimeout(closeTimer);
+            closeTimer = null;
+        };
+
+        const openOnHover = () => {
+            if (window.innerWidth < 992) return;
+            clearCloseTimer();
+            pinnedMenu = null;
+            openMenu(item);
+        };
+
+        item.addEventListener('mouseenter', openOnHover);
+        item.addEventListener('pointerenter', openOnHover);
+        toggle.addEventListener('mouseenter', openOnHover);
+        toggle.addEventListener('mouseover', openOnHover);
 
         item.addEventListener('mouseleave', () => {
             if (window.innerWidth < 992) return;
+            clearCloseTimer();
             if (pinnedMenu && pinnedMenu !== item) {
                 openMenu(pinnedMenu);
             } else if (!pinnedMenu) {
-                closeMenu(item);
+                closeTimer = window.setTimeout(() => closeMenu(item), 180);
             }
         });
 
+        if (panel) {
+            panel.addEventListener('mouseenter', () => {
+                if (window.innerWidth < 992) return;
+                clearCloseTimer();
+                openMenu(item);
+            });
+
+            panel.addEventListener('mouseleave', () => {
+                if (window.innerWidth < 992 || pinnedMenu === item) return;
+                clearCloseTimer();
+                closeTimer = window.setTimeout(() => closeMenu(item), 120);
+            });
+        }
+
         toggle.addEventListener('click', (event) => {
             event.preventDefault();
+            clearCloseTimer();
             const isPinnedOpen = item.classList.contains('menu-open') && pinnedMenu === item;
 
             if (isPinnedOpen) {

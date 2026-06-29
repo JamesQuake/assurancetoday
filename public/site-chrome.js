@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Top tabs describe insurance sections only. General service/about pages
-    // intentionally leave both tabs unselected even if old page metadata exists.
+    // Intentionally leave both tabs unselected when no active navigation section applies.
     const active = document.body.classList.contains('product-page')
         ? (document.body.dataset.active || '')
         : '';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </ul>
                             </div>
                             <div class="col-4 text-end pb-2">
-                                <span class="text-white small tracking-wide"><i class="fa-solid fa-phone text-orange me-2"></i>Call us for a free quote: <strong class="fs-6 ms-1">(888) 418-1200</strong></span>
+                                <span class="text-white small tracking-wide"><i class="fa-solid fa-phone text-orange me-2"></i>Call us for a free quote: <a class="text-white text-decoration-none fw-bold fs-6 ms-1" href="tel:18884181200">(888) 418-1200</a></span>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 <span class="mega-eyebrow">Assurance Total Protection</span>
                                                 <h3>Insurance built around your next chapter.</h3>
                                                 <p>Explore personal and commercial coverage with a team that helps you compare clearly and move confidently.</p>
-                                                <a class="btn mega-quote-btn" href="${quoteTarget}">Start a Quote</a>
+                                                <a class="btn mega-quote-btn" href="${quoteTarget}">Get a Quote</a>
                                             </div>
                                             <div class="mega-menu-content">
                                                 <div class="mega-category-grid">
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </ul>
                                 </li>
                                 <li class="nav-item nav-agent-action ms-lg-3 mt-3 mt-lg-0"><a href="contact-us.html#contact-details" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm premium-hover">Find an Agent</a></li>
-                                <li class="nav-item nav-quote-action mobile-quote-nav"><a href="contact-us.html#quote-form" class="btn mobile-start-quote-btn px-4 py-2 rounded-pill">Start a Quote</a></li>
+                                <li class="nav-item nav-quote-action mobile-quote-nav"><a href="contact-us.html#quote-form" class="btn mobile-start-quote-btn px-4 py-2 rounded-pill">Get a Quote</a></li>
                             </ul>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="col-lg-4 col-md-6">
                             <img src="images/logo.png" alt="Assurance Total Protection" class="mb-4" style="max-height: 55px; width: auto;">
                             <p class="mb-2 text-white"><i class="fa-solid fa-location-dot me-2 opacity-75"></i> 4801 Southwick Dr SUITE 800<br><span class="ms-4">Matteson, IL 60443</span></p>
-                            <p class="mb-2 text-white"><i class="fa-solid fa-phone me-2 opacity-75"></i> 630-227-9000</p>
+                            <p class="mb-2 text-white"><i class="fa-solid fa-phone me-2 opacity-75"></i> <a class="text-white text-decoration-none" href="tel:16302279000">630-227-9000</a></p>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <h5 class="fw-bold mb-4 text-uppercase tracking-wider states-gradient-text fs-4">States We Serve</h5>
