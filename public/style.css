@@ -1163,6 +1163,27 @@ body.utility-bar-hidden .mega-menu-panel {
     font-size: 1.25rem;
 }
 
+.carrier-logo-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    height: 76px;
+    margin-bottom: 16px;
+    border: 1px solid #e6edf6;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.carrier-logo-frame img {
+    display: block;
+    max-width: 86px;
+    max-height: 58px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
 .service-form-panel {
     border-radius: 30px;
     padding: 34px;
