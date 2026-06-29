@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assurance Total Protection | Complete Insurance Solutions</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Linked directly to your style.css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="manifest" href="images/site.webmanifest">
+
+</head>
+<body>
+
+    <!-- Overlay Navigation Wrapper - Fixed Z-Index -->
+    <div class="fixed-top w-100" style="z-index: 1050;">
+        <!-- Premium Top Utility Bar -->
+        <div class="utility-bar bg-dark-blue d-none d-md-block pt-2 shadow-sm">
+            <div class="container-fluid px-lg-5">
+                <div class="row align-items-end">
+                    <div class="col-4"></div>
+                    <!-- Centered Interactive Tabs -->
+                    <div class="col-4 d-flex justify-content-center">
+                        <ul class="nav custom-premium-tabs" id="utilityTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="personal-tab" href="personal.html">Personal</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="commercial-tab" href="commercial-auto.html">Commercial</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Right Justified Phone Number -->
+                    <div class="col-4 text-end pb-2">
+                        <span class="text-white small tracking-wide"><i class="fa-solid fa-phone text-orange me-2"></i>Call us for a free quote: <strong class="fs-6 ms-1">(888) 418-1200</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 50% Opacity Glassmorphic Menu -->
+        <nav class="navbar navbar-expand-lg glass-nav">
+            <div class="container px-lg-4 py-1">
+                <!-- Logo embedded from local images folder -->
+                <a class="navbar-brand py-0" href="index.html">
+                    <img src="images/logo.png" alt="Assurance Total Protection" style="max-height: 45px; width: auto;">
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                    <ul class="navbar-nav align-items-center gap-2 assurance-main-menu">
+                        <li class="nav-item mobile-segment-nav">
+                            <div class="mobile-segment-grid">
+                                <a class="mobile-segment-btn" href="personal.html">Personal</a>
+                                <a class="mobile-segment-btn" href="commercial-auto.html">Commercial</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-mega-menu">
+                            <button class="nav-link nav-menu-toggle fw-semibold px-3" type="button" aria-expanded="false">
+                                Insurance <i class="fa-solid fa-chevron-down ms-1 menu-chevron"></i>
+                            </button>
+                            <div class="mega-menu-panel">
+                                <div class="mega-menu-inner">
+                                    <div class="mega-menu-feature">
+                                        <span class="mega-eyebrow">Assurance Total Protection</span>
+                                        <h3>Insurance built around your next chapter.</h3>
+                                        <p>Explore personal and commercial coverage with a team that helps you compare clearly and move confidently.</p>
+                                        <a class="btn mega-quote-btn" href="#quote-form">Start a Quote</a>
+                                    </div>
+                                    <div class="mega-menu-content">
+                                        <div class="mega-category-grid">
+                                            <div class="mega-category">
+                                                <span class="mega-category-title">Auto</span>
+                                                <a href="automobile.html"><i class="fa-solid fa-car-side"></i><span>Automobile</span></a>
+                                                <a href="motorcycle.html"><i class="fa-solid fa-motorcycle"></i><span>Motorcycle</span></a>
+                                                <a href="sr_22.html"><i class="fa-solid fa-file-shield"></i><span>SR-22 Filing</span></a>
+                                            </div>
+                                            <div class="mega-category">
+                                                <span class="mega-category-title">Home</span>
+                                                <a href="homeowners.html"><i class="fa-solid fa-house-chimney"></i><span>Homeowners</span></a>
+                                                <a href="condo.html"><i class="fa-solid fa-building"></i><span>Condo</span></a>
+                                                <a href="renters.html"><i class="fa-solid fa-key"></i><span>Renters</span></a>
+                                                <a href="property.html"><i class="fa-solid fa-map-location-dot"></i><span>Property</span></a>
+                                            </div>
+                                            <div class="mega-category">
+                                                <span class="mega-category-title">Commercial</span>
+                                                <a href="commercial-auto.html"><i class="fa-solid fa-truck-moving"></i><span>Commercial Auto</span></a>
+                                                <a href="general-liability.html"><i class="fa-solid fa-shield-halved"></i><span>General Liability</span></a>
+                                                <a href="workers-compensation.html"><i class="fa-solid fa-helmet-safety"></i><span>Workers Compensation</span></a>
+                                                <a href="bonds.html"><i class="fa-solid fa-file-contract"></i><span>Surety Bonds</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <button class="nav-link nav-menu-toggle fw-semibold px-3" type="button" aria-expanded="false">
+                                Services <i class="fa-solid fa-chevron-down ms-1 menu-chevron"></i>
+                            </button>
+                            <ul class="standard-submenu">
+                                <li><a href="pay-bill.html"><i class="fa-solid fa-credit-card"></i><span>Pay Bill</span></a></li>
+                                <li><a href="view-documents.html"><i class="fa-solid fa-folder-open"></i><span>View Documents</span></a></li>
+                                <li><a href="file-a-claim.html"><i class="fa-solid fa-file-circle-check"></i><span>File a Claim</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <button class="nav-link nav-menu-toggle fw-semibold px-3" type="button" aria-expanded="false">
+                                About Us <i class="fa-solid fa-chevron-down ms-1 menu-chevron"></i>
+                            </button>
+                            <ul class="standard-submenu standard-submenu-wide">
+                                <li><a href="about-us.html"><i class="fa-solid fa-circle-info"></i><span>About Us</span></a></li>
+                                <li><a href="our-carriers.html"><i class="fa-solid fa-handshake"></i><span>Our Carriers</span></a></li>
+                                <li><a href="testimonials.html"><i class="fa-solid fa-star"></i><span>Testimonials</span></a></li>
+                                <li><a href="refer-a-friend.html"><i class="fa-solid fa-user-plus"></i><span>Refer a Friend</span></a></li>
+                                <li><a href="contact-us.html"><i class="fa-solid fa-envelope"></i><span>Contact Us</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-agent-action ms-lg-3 mt-3 mt-lg-0">
+                            <a href="contact-us.html#contact-details" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm premium-hover">Find an Agent</a>
+                        </li>
+                        <li class="nav-item nav-quote-action mobile-quote-nav">
+                            <a href="contact-us.html#quote-form" class="btn mobile-start-quote-btn px-4 py-2 rounded-pill">Start a Quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 720p Video Hero -->
+    <header class="hero-section position-relative overflow-hidden text-white vh-100">
+        
+        <!-- Centered Vimeo Background Container -->
+        <div class="video-background-container">
+            <div class="hero-video-stage">
+                <iframe title="Assurance Total Protection hero video" src="https://player.vimeo.com/video/829280388?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1&quality=720p" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <img class="hero-video-poster" src="images/assurance_cityscape_sharp_logo_v1.jpg" alt="Trusted Choice Local Agent">
+            </div>
+        </div>
+        
+        <!-- Bare Minimalist Hero Widget - Exact 25px Desktop Padding / Centered Mobile -->
+        <div class="hero-glass-panel-wrapper">
+            <div class="text-center">
+                
+                <!-- Updated container to 65% opacity custom class -->
+                <div class="quote-trigger-box p-3 bg-glass-65 rounded-4 shadow-lg border-0 mb-3">
+                    <div class="working-form-cta working-form-cta-compact">
+                        <h2 class="h5 fw-bold mb-2">Ready to request a quote?</h2>
+                        <p class="small mb-3">Continue to our secure online quote form.</p>
+                        <a href="contact-us.html#quote-form" class="btn btn-orange py-3 rounded-3 fw-bold text-white premium-hover w-100">Request a Quote</a>
+                    </div>
+                </div>
+                
+                <!-- Centered star rating placed directly below with text shadow for readability -->
+                <div class="hero-rating d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="hero-rating-stars d-flex me-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="hero-rating-text small fw-bold">4.8/5 Customer Satisfaction</span>
+                    </div>
+                    
+                    <!-- Sleek white sliver underline -->
+                    <div class="hero-rating-rule rounded-pill"></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Service Center Row -->
+    <section class="py-5 bg-neutral">
+        <div class="container py-5">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="service-action-card p-5 bg-white rounded-4 premium-shadow h-100 transition-up border border-light">
+                        <div class="icon-shape bg-soft-primary text-primary mb-4 mx-auto">
+                            <i class="fa-solid fa-credit-card fa-xl"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Pay Bills</h4>
+                        <p class="text-secondary small mb-4 px-2">Make a quick, secure payment online with our convenient bill pay tool.</p>
+                        <a href="pay-bill.html" class="text-primary fw-bold text-decoration-none icon-link-hover">Make Payment <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-action-card p-5 bg-white rounded-4 premium-shadow h-100 transition-up border border-light">
+                        <div class="icon-shape bg-soft-orange text-orange mb-4 mx-auto">
+                            <i class="fa-solid fa-file-pen fa-xl"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">Policy Changes</h4>
+                        <p class="text-secondary small mb-4 px-2">Convenient, paperless online custom customer service document modifications.</p>
+                        <a href="view-documents.html" class="text-orange fw-bold text-decoration-none icon-link-hover">Get Started <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-action-card p-5 bg-white rounded-4 premium-shadow h-100 transition-up border border-light">
+                        <div class="icon-shape bg-soft-primary text-primary mb-4 mx-auto">
+                            <i class="fa-solid fa-circle-exclamation fa-xl"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark mb-3">File Claims</h4>
+                        <p class="text-secondary small mb-4 px-2">File an insurance claim quickly with our convenient online support system.</p>
+                        <a href="file-a-claim.html" class="text-primary fw-bold text-decoration-none icon-link-hover">File A Claim <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Product Showcases -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center max-w-700 mx-auto mb-5 pb-4">
+                <h2 class="display-6 fw-bold text-dark mb-3">Our Complete Portfolios</h2>
+                <p class="text-secondary lead fs-6">Our dedicated staff of insurance professionals are here to assist you in securing the best policy to protect you and your loved ones for years to come.</p>
+            </div>
+
+            <!-- Commercial Card -->
+            <div class="row align-items-stretch mb-5 product-container-box border-blue rounded-5 overflow-hidden g-0 premium-shadow bg-white">
+                <div class="col-lg-6 p-5 p-xl-5 d-flex flex-column justify-content-center">
+                    <div class="p-lg-3">
+                        <h3 class="display-6 fw-bold mb-3 text-primary">Commercial <span class="text-orange">Insurance</span></h3>
+                        <h6 class="text-dark mb-4 fw-bold tracking-wide text-uppercase small">Why work with a Trusted Choice agent?</h6>
+                        <p class="text-secondary leading-relaxed mb-4">Whether your commercial fleet is one truck or 50, every day brings hazards to the road in the form of collisions, fire, and theft of your truck or cargo. At Assurance Total Protection, we give you the peace of mind of knowing you have the right coverage to cover any unforeseen event. We know the commercial trucking industry inside and out.</p>
+                        <a href="commercial-auto.html" class="btn btn-primary px-5 py-3 rounded-pill fw-bold premium-hover mt-2 align-self-start">Explore Commercial</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0 position-relative min-h-400">
+                    <img src="images/truck_hero1.jpg" alt="Commercial Fleet" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+
+            <!-- Personal Card -->
+            <div class="row align-items-stretch product-container-box border-orange rounded-5 overflow-hidden g-0 premium-shadow bg-white flex-lg-row-reverse mt-5">
+                <div class="col-lg-6 p-5 p-xl-5 d-flex flex-column justify-content-center">
+                    <div class="p-lg-3">
+                        <h3 class="display-6 fw-bold mb-3 text-primary">Personal <span class="text-orange">Insurance</span></h3>
+                        <h6 class="text-dark mb-4 fw-bold tracking-wide text-uppercase small">Let us insure your car today</h6>
+                        <p class="text-secondary leading-relaxed mb-4">For commercial van operators, liability and physical damage coverage are essential as you maneuver through the traffic mazes in our urban jungles. If you are an independent contractor, you may fall under your employer's coverage. Let the experts at Assurance Total Protection audit your coverage to ensure there are no gaps.</p>
+                        <a href="personal.html" class="btn btn-orange text-white px-5 py-3 rounded-pill fw-bold premium-hover mt-2 align-self-start">Explore Personal</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0 position-relative min-h-400">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" alt="Personal Vehicle" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upgraded 1% "Take Action Today" Section -->
+    <section id="quote-form" class="py-5 position-relative action-section-bg overflow-hidden">
+        <div class="container py-5 position-relative z-2">
+            <div class="row align-items-center justify-content-between g-5">
+                <div class="col-lg-5 text-white">
+                    <span class="badge bg-white text-dark px-3 py-2 rounded-pill mb-4 tracking-wide text-uppercase fw-bold shadow-sm">Take Action Today</span>
+                    <h2 class="display-4 fw-bold mb-4 lh-sm">It begins with a conversation.</h2>
+                    <p class="lead opacity-75 mb-0 fw-light">Our expert advisers are ready to assess your structural insurance risk and provide tailored protection optimization plans immediately. No obligations, just clarity.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-5 p-lg-5 rounded-5 premium-shadow-lg action-card">
+                        <div class="working-form-cta text-center">
+                            <i class="fa-solid fa-comments working-form-cta-icon" aria-hidden="true"></i>
+                            <h3 class="fw-bold text-primary mb-3">Start with our secure quote form.</h3>
+                            <p class="text-secondary mb-4">Tell us what coverage you need and an Assurance adviser will follow up.</p>
+                            <a href="contact-us.html#quote-form" class="btn btn-primary btn-lg fw-bold rounded-pill px-5 py-3">Request a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refined Geico Green Footer -->
+    <footer class="bg-navy-footer text-white py-5 position-relative">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                
+                <!-- HQ Column -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="images/logo.png" alt="Assurance Total Protection" class="mb-4" style="max-height: 55px; width: auto;">
+                    <p class="mb-2 text-white"><i class="fa-solid fa-location-dot me-2 opacity-75"></i> 4801 Southwick Dr SUITE 800<br><span class="ms-4">Matteson, IL 60443</span></p>
+                    <p class="mb-2 text-white"><i class="fa-solid fa-phone me-2 opacity-75"></i> 630-227-9000</p>
+                </div>
+                
+                <!-- States Column with Gradient Text -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4 text-uppercase tracking-wider states-gradient-text fs-4">States We Serve</h5>
+                    <ul class="list-unstyled text-white">
+                        <li class="mb-2 opacity-90">Illinois</li>
+                        <li class="mb-2 opacity-90">Indiana</li>
+                        <li class="mb-2 opacity-90">Wisconsin</li>
+                    </ul>
+                </div>
+                
+                <!-- White Gradient Trust & Social Panel (Responsive Wrapper) -->
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="footer-trust-panel d-inline-block text-center w-100">
+                        <!-- Fully Linked Badges Row -->
+                        <div class="footer-badge-row mb-4">
+                            <a href="https://www.trustedchoice.com/basic/agency-profile/1100372/assurance-total-protection/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/tc.png" alt="Trusted Choice" class="footer-badge">
+                            </a>
+                            <a href="https://www.bbb.org/us/il/midlothian/profile/auto-insurance/assurance-total-protection-0654-88653293" target="_blank" rel="noopener noreferrer">
+                                <img src="images/bbb.png" alt="Better Business Bureau" class="footer-badge">
+                            </a>
+                            <a href="https://www.progressiveagent.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/progressive-flo.png" alt="Progressive" class="footer-badge">
+                            </a>
+                        </div>
+                        
+                        <!-- Responsive Brand Colored Social Icons -->
+                        <div class="d-flex justify-content-center gap-3 gap-md-4 mt-auto flex-wrap">
+                            <a href="#" class="social-circle-icon social-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-circle-icon social-li"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-circle-icon social-yt"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-5 pt-4 border-top border-light border-opacity-25 text-center text-white-50">
+                <p class="small">&copy; 2026 Assurance Total Protection. All rights reserved. Coverage availability, terms, and conditions are subject to carrier underwriting and policy provisions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
