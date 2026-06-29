@@ -488,10 +488,6 @@ body.utility-bar-hidden .mega-menu-panel {
         font-size: 0.9rem !important;
     }
 
-    .hero-glass-panel-wrapper .btn {
-        padding: 8px 12px !important;
-        font-size: 0.95rem !important;
-    }
 }
 
 @media (max-height: 860px) and (min-width: 769px) {
@@ -3179,25 +3175,7 @@ body.product-page[data-active="commercial"] .product-image-hero .btn-primary:act
         linear-gradient(135deg, #f15a24 0%, #d74614 58%, #b7350f 100%) !important;
 }
 
-.home-hero-quote-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: min(100%, 220px);
-    min-height: 48px;
-    padding: 12px 22px !important;
-    line-height: 1.15;
-    white-space: nowrap;
-}
-
 @media (max-width: 575.98px) {
-    .home-hero-quote-btn {
-        width: min(100%, 220px);
-        min-height: 44px;
-        padding: 10px 20px !important;
-        font-size: 0.95rem !important;
-    }
-
     .commercial-hero-actions .btn,
     .about-hero-actions .btn,
     .product-hero .commercial-hero-actions .btn {
