@@ -1185,6 +1185,22 @@ body.utility-bar-hidden .mega-menu-panel {
     background: rgba(255,255,255,0.96) !important;
 }
 
+.service-form-panel .btn-primary {
+    color: #ffffff !important;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.28), transparent 42%),
+        linear-gradient(135deg, #ff8a4c 0%, #f15a24 52%, #d74614 100%) !important;
+}
+
+.service-form-panel .btn-primary:hover,
+.service-form-panel .btn-primary:focus-visible,
+.service-form-panel .btn-primary:active {
+    color: #ffffff !important;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.18), transparent 42%),
+        linear-gradient(135deg, #f15a24 0%, #d74614 58%, #b7350f 100%) !important;
+}
+
 /* Contact quote embed: keep the host panel continuous with the white widget. */
 .contact-quote-panel {
     color: var(--text-dark);
